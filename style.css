@@ -15,6 +15,9 @@
   --color-primary-light: #3a38b8;
   --color-primary-dark: #0a0944;
   
+  /* Text color (#530a8f as requested) */
+  --color-text: #530a8f;
+  
   /* Neutral colors */
   --color-white: #ffffff;
   --color-black: #000000;
@@ -70,7 +73,7 @@ body {
   font-family: var(--font-family-base);
   font-size: var(--font-size-base);
   line-height: var(--line-height-base);
-  color: var(--color-white);
+  color: var(--color-text);
   background-color: var(--color-primary);
   min-height: 100vh;
   display: flex;
@@ -81,7 +84,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.2;
   margin-bottom: var(--spacing-sm);
-  color: var(--color-primary);
+  color: var(--color-white);
 }
 
 h1 { font-size: 2.5rem; }
@@ -93,10 +96,11 @@ h6 { font-size: 1rem; }
 
 p {
   margin-bottom: var(--spacing-md);
+  color: var(--color-text);
 }
 
 a {
-  color: var(--color-primary);
+  color: var(--color-white);
   text-decoration: none;
   transition: color var(--transition-timing);
 }
@@ -140,13 +144,13 @@ a:hover {
 
 .btn-outline {
   background-color: transparent;
-  border: var(--border-width) solid var(--color-primary);
-  color: var(--color-primary);
+  border: var(--border-width) solid var(--color-white);
+  color: var(--color-white);
 }
 
 .btn-outline:hover {
-  background-color: var(--color-primary);
-  color: var(--color-white);
+  background-color: var(--color-white);
+  color: var(--color-primary);
 }
 
 /* ===== FORMS ===== */
@@ -158,6 +162,8 @@ input, textarea, select {
   font-family: inherit;
   font-size: inherit;
   transition: border-color var(--transition-timing), box-shadow var(--transition-timing);
+  color: var(--color-text);
+  background-color: var(--color-white);
 }
 
 input:focus, textarea:focus, select:focus {
@@ -174,6 +180,7 @@ input:focus, textarea:focus, select:focus {
   padding: var(--spacing-md);
   box-shadow: var(--box-shadow-sm);
   margin-bottom: var(--spacing-md);
+  color: var(--color-text);
 }
 
 .card:hover {
@@ -184,6 +191,7 @@ input:focus, textarea:focus, select:focus {
 .text-primary { color: var(--color-primary); }
 .bg-primary { background-color: var(--color-primary); }
 .text-white { color: var(--color-white); }
+.text-custom { color: var(--color-text); }
 
 .text-center { text-align: center; }
 .text-left { text-align: left; }
