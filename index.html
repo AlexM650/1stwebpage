@@ -47,24 +47,15 @@
             color: #18168c;
             margin-top: 0;
         }
-        .writing-panel textarea {
-            display: block;
-            width: 100%;
-            min-height: 330px;
-            padding: 12px;
-            background-color: pink;
-            border: 2px solid #18168c;
-            border-radius: 6px;
-            box-sizing: border-box;
-            font: 16px/1.5 Arial, sans-serif;
-            resize: vertical;
+        .writing-panel p {
+            color: #18168c;
+            font-size: 18px;
+            line-height: 1.5;
+            margin: 0 0 16px;
         }
         @media (max-width: 700px) {
             .page-content {
                 grid-template-columns: 1fr;
-            }
-            .writing-panel textarea {
-                min-height: 220px;
             }
         }
     </style>
@@ -78,7 +69,9 @@
         </div>
         <section class="writing-panel" aria-labelledby="writing-title">
             <h2 id="writing-title">Fishy</h2>
-            <textarea placeholder="Type something here..."></textarea>
+            <!-- Add writing here with paragraph tags, for example:
+            <p>Your writing here.</p>
+            -->
         </section>
     </main>
 </body>
